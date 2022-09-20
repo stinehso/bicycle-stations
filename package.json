@@ -10,8 +10,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "sass": "^1.54.9",
-    "vue": "^3.2.38",
-    "vue-axios": "^3.4.1"
+    "vue": "^3.2.38"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",

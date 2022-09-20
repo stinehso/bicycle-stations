@@ -1,6 +1,8 @@
 # bicycle-stations
 
-This template should help get you started developing with Vue 3 in Vite.
+En liten app som viser navn og tilstand for Oslo Bysykkel sine stativer
+
+Kjøres med `npm install` og `npm run dev`, som beskrevet under
 
 ## Recommended IDE Setup
 

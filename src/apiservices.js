@@ -1,23 +1,28 @@
 import axios from 'axios';
 
-const baseUrl = 'https://gbfs.urbansharing.com/oslobysykkel.no'
-const clientIdentifier = 'stine-bicycle-stations'
+const baseUrl = 'https://gbfs.urbansharing.com/oslobysykkel.no';
+const clientIdentifier = 'stine-bicycle-stations';
 
 let service = axios.create({
+  baseURL: baseUrl,
   headers: {
     common: {
       'Client-Identifier': clientIdentifier,
-    }
-  }
-})
+    },
+  },
+});
 
 export default {
   async getStationInformation() {
-    const { data } = await service.get(`${baseUrl}/station_information.json`);
-    return data;
+    return service({
+      method: 'GET',
+      url: '/station_information.json',
+    });
   },
   async getStationStatus() {
-    const { data } = await service.get(`${baseUrl}/station_status.json`);
-    return data;
+    return service({
+      method: 'GET',
+      url: '/station_status.json',
+    });
   },
-}
+};
