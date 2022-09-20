@@ -47,7 +47,7 @@ table {
 }
 table caption {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 th {
   font-weight: 600;
@@ -55,8 +55,11 @@ th {
 th,
 td {
   line-height: 1.4rem;
-  padding: 0.75rem 1em;
+  padding: 0.75rem 1rem;
   border-bottom: 1px solid #c2c2c2;
+}
+tbody th {
+  min-width: 15rem;
 }
 tbody th,
 td {
