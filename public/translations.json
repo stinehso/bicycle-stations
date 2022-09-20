@@ -1,0 +1,13 @@
+{
+  "heading_title": "Oslo bysykkel",
+  "table": {
+    "title": "Sykkelstativersss",
+    "descriptions": {
+      "available": "Tilgjengelig",
+      "bikes": "sykler",
+      "bikes_one": "sykkel",
+      "docks": "låser",
+      "docks_one": "lås"
+    }
+  }
+}
